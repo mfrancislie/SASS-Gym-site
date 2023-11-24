@@ -1,0 +1,102 @@
+@import 'color';
+@import 'media-queries';
+
+%align-center {
+  display: flex;
+  align-items: center;
+}
+/* NAVBAR STYLE */
+.navbar {
+  background-color: var(--black);
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &_logo {
+    padding-left: 2rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &_menu {
+    @extend %align-center;
+    list-style: none;
+    text-align: center;
+    margin-right: 24px;
+    // navbar_menu-link
+    &-link {
+      color: var(--white);
+      text-decoration: none;
+      padding: 0 1rem;
+      @extend %align-center;
+      justify-content: center;
+      padding: 0 1rem;
+      &:hover {
+        color: var(--red);
+        transition: 0.2s ease;
+      }
+    }
+  }
+
+  @include tablet {
+    .navbar_menu {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 100px);
+      width: 100%;
+      position: absolute;
+      left: -500px;
+      top: 60px;
+      transition: all 0.5s ease;
+      &.active {
+        @include set-active-styles;
+      }
+    }
+
+    &_toggle {
+      cursor: pointer;
+      &-bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: var(--white);
+        display: block;
+      }
+    }
+
+    #mobile-bar {
+      position: absolute;
+      top: 15%;
+      right: 5%;
+      transform: translate(5%, 20%);
+    }
+
+    #mobile-bar.is-active .navbar_toggle-bar:nth-child(2) {
+      opacity: 0;
+      transition: 0.2s ease;
+    }
+
+    #mobile-bar.is-active .navbar_toggle-bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+      transition: 0.2s ease;
+    }
+
+    #mobile-bar.is-active .navbar_toggle-bar:nth-child(3) {
+      transition: 0.2s ease;
+
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}
+
+@include tablet {
+  body.active {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}
