@@ -1,0 +1,61 @@
+.email {
+  background: linear-gradient(
+      100deg,
+      rgb(0, 0, 0, 0.6) 0%,
+      rgb(0, 0, 0, 0.6) 35%,
+      rgb(0, 0, 0, 0.1) 100%
+    ),
+    url('/assets/img/gym2.jpg');
+  background-size: cover;
+
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    // background-color: red;
+    align-items: center;
+
+    h1 {
+      font-size: clamp(1rem, 5vw, 3rem);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    p {
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      margin-bottom: 2rem;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    form {
+      z-index: 10;
+
+      .form_wrapper {
+        @include tablet {
+          display: flex;
+          flex-direction: column;
+          padding: 0 1rem;
+        }
+        input {
+          padding: 1rem 3rem;
+          width: 350px;
+          outline: none;
+
+          border: none;
+          margin-right: 1rem;
+          border-radius: 4px;
+          @include tablet {
+            margin-bottom: 1rem;
+            width: 72%;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

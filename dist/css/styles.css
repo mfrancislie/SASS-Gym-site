@@ -18,6 +18,14 @@
 @media screen and (max-width: 768px) {
   .btn {
     padding: 1rem 2.2rem;
+    width: 100%;
+    min-width: 350px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .btn {
+    width: 100%;
+    min-width: 250px;
   }
 }
 
@@ -339,5 +347,56 @@
   .wrapper_text:nth-child(2) {
     grid-row: 6/7;
     grid-column: 1/2;
+  }
+}
+.email {
+  background: linear-gradient(100deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.1) 100%), url("/assets/img/gym2.jpg");
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+.email_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.email_content h1 {
+  font-size: clamp(1rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.email_content p {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+.email_content form {
+  z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  .email_content form .form_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+}
+.email_content form .form_wrapper input {
+  padding: 1rem 3rem;
+  width: 350px;
+  outline: none;
+  border: none;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  .email_content form .form_wrapper input {
+    margin-bottom: 1rem;
+    width: 72%;
+    margin-right: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
