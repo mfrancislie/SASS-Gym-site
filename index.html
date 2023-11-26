@@ -12,6 +12,10 @@
       crossorigin="anonymous"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
@@ -27,7 +31,7 @@
       </div>
       <div class="navbar_menu">
         <a href="#" class="navbar_menu-link">Home</a>
-        <a href="#" class="navbar_menu-link">Services</a>
+        <a href="#services" class="navbar_menu-link">Services</a>
 
         <a href="#" class="navbar_menu-link">Plans</a>
         <a href="#" class="navbar_menu-link">Contact Us</a>
@@ -39,7 +43,134 @@
       <div class="hero_content">
         <h1>Fitness Gym</h1>
         <p>Join for $232</p>
-        <button class="hero_content--btn">Get Started</button>
+        <button class="btn">Get Started</button>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <div class="services_container">
+        <div>
+          <p class="services_container--topline">Features</p>
+          <h2>What we offer?</h2>
+          <div class="services_features">
+            <p class="services_features--feature">
+              <i class="fa fa-check-circle-o" style="font-size: 20px"></i>Group
+              Fitness Classes
+            </p>
+            <p class="services_features--feature">
+              <i class="fa fa-check-circle-o" style="font-size: 20px"></i
+              >Personal Trainor Session
+            </p>
+            <p class="services_features--feature">
+              <i class="fa fa-check-circle-o" style="font-size: 20px"></i>Indoor
+              Room
+            </p>
+            <p class="services_features--feature">
+              <i class="fa fa-check-circle-o" style="font-size: 20px"></i
+              >Basketball Court
+            </p>
+
+            <p class="services_features--feature">
+              <i class="fa fa-check-circle-o" style="font-size: 20px"></i> Open
+              24/7
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="/assets/img/gym2.jpg" alt="" class="services_img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Membership Section -->
+    <div class="membership">
+      <h1 class="membership_heading">View Our Plans</h1>
+      <p class="membership_desc">
+        Get Started today and recieve 25% off your first month
+      </p>
+
+      <div class="membership_wrapper">
+        <div class="membership_card">
+          <div class="membership_card--title">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1.3em"
+              viewBox="0 0 640 512"
+            >
+              <style>
+                svg {
+                  fill: #f9032f;
+                }
+              </style>
+              <path
+                d="M96 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V224v64V448c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384H64c-17.7 0-32-14.3-32-32V288c-17.7 0-32-14.3-32-32s14.3-32 32-32V160c0-17.7 14.3-32 32-32H96V64zm448 0v64h32c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32v64c0 17.7-14.3 32-32 32H544v64c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32V288 224 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32zM416 224v64H224V224H416z"
+              />
+            </svg>
+            <h3>Starter</h3>
+          </div>
+          <div class="membership_perks">
+            <p>Get Access to the entire gym</p>
+            <p>Group Fitness Classes</p>
+            <p>Private Personal Training</p>
+            <p>$23 per month</p>
+          </div>
+          <button class="btn">Sign Up</button>
+        </div>
+        <div class="membership_card">
+          <div class="membership_card--title">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1.3em"
+              viewBox="0 0 640 512"
+              class="card-icon"
+            >
+              <style>
+                svg {
+                  fill: #f9032f;
+                }
+              </style>
+              <path
+                d="M96 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V224v64V448c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384H64c-17.7 0-32-14.3-32-32V288c-17.7 0-32-14.3-32-32s14.3-32 32-32V160c0-17.7 14.3-32 32-32H96V64zm448 0v64h32c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32v64c0 17.7-14.3 32-32 32H544v64c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32V288 224 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32zM416 224v64H224V224H416z"
+              />
+            </svg>
+            <h3>Silver</h3>
+          </div>
+          <div class="membership_perks">
+            <p>Get Access to the entire gym</p>
+            <p>Group Fitness Classes</p>
+            <p>Private Personal Training</p>
+            <p>$23 per month</p>
+          </div>
+          <button class="btn">Sign Up</button>
+        </div>
+        <div class="membership_card">
+          <div class="membership_card--title">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1.3em"
+              viewBox="0 0 640 512"
+              class="card-icon"
+            >
+              <style>
+                svg {
+                  fill: #f9032f;
+                }
+              </style>
+              <path
+                d="M96 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V224v64V448c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384H64c-17.7 0-32-14.3-32-32V288c-17.7 0-32-14.3-32-32s14.3-32 32-32V160c0-17.7 14.3-32 32-32H96V64zm448 0v64h32c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32v64c0 17.7-14.3 32-32 32H544v64c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32V288 224 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32zM416 224v64H224V224H416z"
+              />
+            </svg>
+            <h3>Gold</h3>
+          </div>
+          <div class="membership_perks">
+            <p>Get Access to the entire gym</p>
+            <p>Group Fitness Classes</p>
+            <p>Private Personal Training</p>
+            <p>$23 per month</p>
+          </div>
+          <button class="btn">Sign Up</button>
+        </div>
       </div>
     </div>
   </body>

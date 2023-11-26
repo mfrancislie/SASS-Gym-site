@@ -1,8 +1,33 @@
+@import 'media-queries';
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.btn {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  background: var(--red);
+  color: var(--white);
+
+  @include tablet {
+    padding: 1rem 2.2rem;
+  }
+}
+
+.btn:hover {
+  background: var(--black);
+  transition: all 0.2s ease;
 }
 
 @import 'navbar';
 @import 'hero';
+@import 'services';
+@import 'memberships';
