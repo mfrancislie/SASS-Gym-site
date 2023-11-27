@@ -34,9 +34,39 @@
   transition: all 0.2s ease;
 }
 
+.scrollup {
+  position: fixed;
+  background: var(--red);
+  right: 1rem;
+  bottom: -20%;
+  display: inline-flex;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  z-index: var(--z-tooltip);
+  opacity: 0.8;
+  transition: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #fa5059;
+    opacity: 1;
+  }
+  &__icon {
+    font-size: 1.25rem;
+    color: var(--white);
+  }
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 3rem;
+}
+
 @import 'navbar';
 @import 'hero';
 @import 'services';
 @import 'memberships';
 @import 'team';
 @import 'email';
+@import 'footer';

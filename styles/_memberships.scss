@@ -43,6 +43,12 @@
     &--title {
       font-size: clamp(1rem, 5vw, 2rem);
       margin-bottom: 2rem;
+      .bx-dumbbell {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: var(--red);
+        font-weight: bold;
+      }
     }
 
     @include ipad {

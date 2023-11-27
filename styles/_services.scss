@@ -30,9 +30,11 @@
     list-style: none;
     &--feature {
       margin-bottom: 1.5rem;
-      .fa-check-circle-o {
+      .bx-check-circle {
         color: var(--red);
         margin: 0 0.5rem;
+        font-weight: bold;
+        font-size: 1.3rem;
       }
     }
   }
